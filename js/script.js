@@ -178,56 +178,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('scroll', setActiveNavLink, { passive: true });
 setActiveNavLink();
-/* =========================================================
-   4. SCROLL SUAVE + LINK ACTIVO
-   ========================================================= */
-/*const allNavLinks = qsa('.nav-link');
-const sections    = qsa('section[id], div[id]');
-
-// Cerrar menú mobile al hacer click en un link
-allNavLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    const href = link.getAttribute('href');
-    if (!href || !href.startsWith('#')) return;
-
-    e.preventDefault();
-    closeMenu();
-
-    const target = qs(href);
-    if (!target) return;
-
-    const navHeight = header ? header.offsetHeight : 80;
-    const targetTop = target.getBoundingClientRect().top + window.scrollY - navHeight - 8;
-
-    window.scrollTo({ top: targetTop, behavior: 'smooth' });
-  });
-});
-
-// Resaltar link activo según scroll
-function setActiveNavLink() {
-  const navHeight = header ? header.offsetHeight : 80;
-  const scrollPos = window.scrollY + navHeight + 40;
-
-  // Encontrar la sección más cercana desde arriba
-  let currentId = '';
-  sections.forEach(section => {
-    if (section.offsetTop <= scrollPos) {
-      currentId = section.id;
-    }
-  });
-
-  allNavLinks.forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === `#${currentId}`) {
-      link.classList.add('active');
-    } else {
-      link.classList.remove('active');
-    }
-  });
-}
-
-window.addEventListener('scroll', setActiveNavLink, { passive: true });
-setActiveNavLink(); */
 
 
 /* =========================================================
