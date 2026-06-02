@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mi Chef - Galería de fotos del local y nuestras comidas. Pizzas, empanadas, carnes y más." />
+  <title>Galería | Mi Chef Rotisería</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-galeria">
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="header">
+    <div class="header-top-bar">
+      <span><i class="fa-regular fa-clock"></i> Lun a Sáb &nbsp;|&nbsp; 19:00 – 23:00</span>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="nav-logo" aria-label="Mi Chef - Inicio">
+        <svg class="logo-icon" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="30" cy="38" rx="22" ry="7" fill="var(--gold)"/>
+          <rect x="11" y="31" width="38" height="10" rx="4" fill="var(--gold)"/>
+          <circle cx="30" cy="20" r="14" fill="var(--cream)"/>
+          <circle cx="16" cy="25" r="9" fill="var(--cream)"/>
+          <circle cx="44" cy="25" r="9" fill="var(--cream)"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">Mi Chef</span>
+          <span class="logo-sub">Rotisería Familiar</span>
+        </div>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+
+        <!-- Desplegable Platos -->
+        <li class="has-dropdown">
+          <a href="platos.html" class="nav-link dropdown-toggle">
+            Platos <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </a>
+          <ul class="dropdown" role="menu">
+            <li role="menuitem"><a href="platos.html#pizzas" class="dropdown-link">Pizzas</a></li>
+            <li role="menuitem"><a href="platos.html#empanadas" class="dropdown-link">Empanadas</a></li>
+            <li role="menuitem"><a href="platos.html#milanesas" class="dropdown-link">Milanesas</a></li>
+            <li role="menuitem"><a href="platos.html#pastas" class="dropdown-link">Pastas</a></li>
+            <li role="menuitem"><a href="platos.html#carnes" class="dropdown-link">Carnes</a></li>
+            <li role="menuitem"><a href="platos.html#pollos" class="dropdown-link">Pollos</a></li>
+            <li role="menuitem"><a href="platos.html#ensaladas" class="dropdown-link">Ensaladas</a></li>
+          </ul>
+        </li>
+
+        <!-- Desplegable Extra -->
+        <li class="has-dropdown">
+          <a href="extra.html" class="nav-link dropdown-toggle">
+            Extra <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </a>
+          <ul class="dropdown" role="menu">
+            <li role="menuitem"><a href="extra.html#bebidas" class="dropdown-link"><i class="fa-solid fa-bottle-water"></i> Bebidas</a></li>
+            <li role="menuitem"><a href="extra.html#salsas"  class="dropdown-link"><i class="fa-solid fa-bowl-food"></i> Salsas</a></li>
+            <li role="menuitem"><a href="extra.html#postres" class="dropdown-link"><i class="fa-solid fa-cake-candles"></i> Postres</a></li>
+          </ul>
+        </li>
+
+        <li><a href="galeria.html"   class="nav-link active">Galería</a></li>
+        <li><a href="contacto.html"  class="nav-link nav-cta">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <div class="page-hero">
+      <div class="page-hero-bg">
+        <img src="img/banner-galeria_compressed.webp" alt="" aria-hidden="true" />
+        <div class="page-hero-overlay"></div>
+      </div>
+      <div class="container page-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Inicio</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>Galería</span>
+        </nav>
+        <span class="section-label" style="color:var(--gold)">Nuestro mundo</span>
+        <h1 class="page-hero-title">Galería</h1>
+        <p>Fotos del equipo y de los platos que preparamos con amor cada noche.</p>
+      </div>
+    </div>
+
+    <!-- ===================== GALERÍA ===================== -->
+    <section class="gallery-page section-pad">
+      <div class="container">
+
+         <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all"><i class="fa-solid fa-border-all"></i> Todos</button>
+          <button class="filter-btn" data-filter="local"><i class="fa-solid fa-shop"></i> El Local</button>
+          <button class="filter-btn" data-filter="comida"><i class="fa-solid fa-utensils"></i> Comidas</button>
+          <button class="filter-btn" data-filter="extra"><i class="fa-solid fa-ice-cream"></i> Extras</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+
+          <!-- LOCAL -->
+          <div class="gallery-item reveal" data-category="local">
+            <div class="gallery-img-wrap">
+              <img src="img/local.webp"
+                   alt="Interior del local Mi Chef"
+                   loading="lazy"
+                   data-caption="Interior del local — Ambiente cálido y familiar" />
+              <div class="gallery-item-overlay">
+                <span>Interior del local</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="local">
+            <div class="gallery-img-wrap">
+              <img src="img/cocina.webp"
+                   alt="Cocina de Mi Chef"
+                   loading="lazy"
+                   data-caption="Nuestra cocina — Donde nace todo el sabor" />
+              <div class="gallery-item-overlay">
+                <span>La cocina</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="local">
+            <div class="gallery-img-wrap">
+              <img src="img/cajera.webp"
+                   alt="Cajera atendiendo"
+                   loading="lazy"
+                   data-caption="Nuestra cajera de siempre atendiendo — Servicio amable y profesional" />
+              <div class="gallery-item-overlay">
+                <span>Cajera atendiendo</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="local">
+            <div class="gallery-img-wrap">
+              <img src="img/entrada.webp"
+                   alt="Entrada del local"
+                   loading="lazy"
+                   data-caption="Nuestro local — Av. Rivadavia 4521, Merlo" />
+              <div class="gallery-item-overlay">
+                <span>Nuestro local</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- COMIDAS -->
+          <div class="gallery-item reveal" data-category="comida">
+            <div class="gallery-img-wrap">
+              <img src="img/muzzarella.webp"
+                   alt="Muzzarrella"
+                   loading="lazy"
+                   data-caption="Fugazzeta — Masa artesanal, ingredientes seleccionados" />
+              <div class="gallery-item-overlay">
+                <span>Fugazzeta</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="comida">
+            <div class="gallery-img-wrap">
+              <img src="img/ñoquis_compressed.webp"
+                   alt="Ñoquis"
+                   loading="lazy"
+                   data-caption="Ñoquis — Hechos a mano cada día" />
+              <div class="gallery-item-overlay">
+                <span>Ñoquis</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="comida">
+            <div class="gallery-img-wrap">
+              <img src="img/emp_carne2_compressed.webp"
+                   alt="Empanadas caseras"
+                   loading="lazy"
+                   data-caption="Empanadas caseras — La docena perfecta" />
+              <div class="gallery-item-overlay">
+                <span>Empanadas caseras</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="comida">
+            <div class="gallery-img-wrap">
+              <img src="img/vacio.webp"
+                   alt="Asado al horno"
+                   loading="lazy"
+                   data-caption="Asado al horno — Cocción lenta, sabor sin igual" />
+              <div class="gallery-item-overlay">
+                <span>Asado al horno</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="comida">
+            <div class="gallery-img-wrap">
+              <img src="img/pollo y papas_compressed.webp"
+                   alt="Pollo al spiedo"
+                   loading="lazy"
+                   data-caption="Pollo al spiedo — Dorado y jugoso, el N°1 de la casa" />
+              <div class="gallery-item-overlay">
+                <span>Pollo al spiedo</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="comida">
+            <div class="gallery-img-wrap">
+              <img src="img/Empanadas-pollo.webp"
+                   alt="Empanadas de pollo"
+                   loading="lazy"
+                   data-caption="Empanadas de pollo - Un gusto irresistible" />
+              <div class="gallery-item-overlay">
+                <span>Empanadas de pollo</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="comida">
+            <div class="gallery-img-wrap">
+              <img src="img/mila_napolitana.webp"
+                   alt="Milanesa napolitana"
+                   loading="lazy"
+                   data-caption="Milanesa napolitana — El plato más pedido de la casa" />
+              <div class="gallery-item-overlay">
+                <span>Milanesa napolitana</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="comida">
+            <div class="gallery-img-wrap">
+              <img src="img/ensalda rusa.webp"
+                   alt="Ensalada rusa"
+                   loading="lazy"
+                   data-caption="Ensalada fresca — Verduras del día, siempre" />
+              <div class="gallery-item-overlay">
+                <span>Ensalada fresca</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXTRAS -->
+          <div class="gallery-item reveal" data-category="extra">
+            <div class="gallery-img-wrap">
+              <img src="img/flan.webp"
+                   alt="Flan casero con dulce de leche"
+                   loading="lazy"
+                   data-caption="Flan casero con dulce de leche — El postre estrella" />
+              <div class="gallery-item-overlay">
+                <span>Flan casero</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="extra">
+            <div class="gallery-img-wrap">
+              <img src="img/tiramisu_compressed.webp"
+                   alt="Tiramisú"
+                   loading="lazy"
+                   data-caption="Tiramisú — Una delicadeza italiana irresistible" />
+              <div class="gallery-item-overlay">
+                <span>Tiramisú</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="extra">
+            <div class="gallery-img-wrap">
+              <img src="img/jugo.webp"
+                   alt="Jugo natural"
+                   loading="lazy"
+                   data-caption="Jugos naturales — Exprimidos al momento, sin conservantes" />
+              <div class="gallery-item-overlay">
+                <span>Jugos naturales</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="extra">
+            <div class="gallery-img-wrap">
+              <img src="img/ensalada_frutas_compressed.webp"
+                   alt="Ensalada de frutas"
+                   loading="lazy"
+                   data-caption="Ensalada de frutas — Fresca, colorida y natural" />
+              <div class="gallery-item-overlay">
+                <span>Ensalada de frutas</span>
+                <button class="gallery-zoom" aria-label="Ver imagen ampliada">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="gallery-empty" id="galleryEmpty" style="display:none;">
+          <i class="fa-solid fa-image-slash"></i>
+          <p>No hay fotos en esta categoría todavía.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <div class="cta-banner">
+      <div class="cta-bg">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400&q=80" alt="" aria-hidden="true" />
+        <div class="cta-overlay"></div>
+      </div>
+      <div class="container cta-content reveal">
+        <h2>¿Te dio hambre?<br/><em>Hacé tu pedido ahora</em></h2>
+        <p>Abrimos de lunes a sábados de 19:00 a 23:00 hs.</p>
+        <a href="https://wa.me/5491145237890?text=Hola!%20Quiero%20hacer%20un%20pedido." class="btn btn-primary" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Mi Chef - Inicio">
+            <svg class="logo-icon" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <ellipse cx="30" cy="38" rx="22" ry="7" fill="var(--gold)"/>
+              <rect x="11" y="31" width="38" height="10" rx="4" fill="var(--gold)"/>
+              <circle cx="30" cy="20" r="14" fill="var(--cream)"/>
+              <circle cx="16" cy="25" r="9" fill="var(--cream)"/>
+              <circle cx="44" cy="25" r="9" fill="var(--cream)"/>
+            </svg>
+            <div class="logo-text">
+              <span class="logo-name" style="color:var(--cream)">Mi Chef</span>
+              <span class="logo-sub" style="color:var(--gold)">Rotisería Familiar</span>
+            </div>
+          </a>
+          <p>Comida casera de calidad desde 2012. Porque el mejor sabor es el que se siente en casa.</p>
+          <div class="social-links">
+            <a href="https://wa.me/5491145237890" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://instagram.com/michefrotiseria" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com/michefrotiseria" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Menú</h4>
+          <ul>
+            <li><a href="platos.html#pizzas">Pizzas</a></li>
+            <li><a href="platos.html#empanadas">Empanadas</a></li>
+            <li><a href="platos.html#milanesas">Milanesas</a></li>
+            <li><a href="platos.html#pastas">Pastas Caseras</a></li>
+            <li><a href="platos.html#carnes">Carnes</a></li>
+            <li><a href="platos.html#pollos">Pollos</a></li>
+            <li><a href="platos.html#ensaladas">Ensaladas</a></li>
+            <li><a href="extra.html#bebidas">Bebidas</a></li>
+            <li><a href="extra.html#salsas">Salsas</a></li>
+            <li><a href="extra.html#postres">Postres</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contacto y Horarios</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Av. Rivadavia 24822, Merlo, Buenos Aires</p>
+          <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5491145237890">+54 11 4523-7890</a></p>
+          <p><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/michefrotiseria">@michefrotiseria</a></p>
+          <p><i class="fa-brands fa-facebook-f"></i> <a href="https://facebook.com/michefrotiseria">Mi Chef Rotisería</a></p>
+          <div class="footer-hours">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+              <span>Lunes a Sábados</span>
+              <strong>19:00 – 23:00 hs</strong>
+              <span style="color:var(--gold-light);font-size:.8rem;">Domingos cerrado</span>
+            </div>
+          </div>
+          <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="galeria.html"  class="footer-page-link"><i class="fa-solid fa-images"></i> Galería</a>
+            <a href="contacto.html" class="footer-page-link"><i class="fa-solid fa-envelope"></i> Contacto</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Mi Chef Rotisería. Todos los derechos reservados.</p>
+        <p>Diseñado con <span style="color:var(--terracota)">♥</span> en Buenos Aires</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== LIGHTBOX MODAL ===================== -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imagen" style="display:none;">
+    <div class="lightbox-overlay" id="lightboxOverlay"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Imagen siguiente">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <div class="lightbox-img-wrap">
+        <img id="lightboxImg" src="" alt="" />
+        <div class="lightbox-loader"><i class="fa-solid fa-circle-notch fa-spin"></i></div>
+      </div>
+      <div class="lightbox-footer">
+        <span id="lightboxCaption" class="lightbox-caption"></span>
+        <span id="lightboxCounter" class="lightbox-counter"></span>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/5491145237890?text=Hola!%20Quiero%20hacer%20un%20pedido." class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

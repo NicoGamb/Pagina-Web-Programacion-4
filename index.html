@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mi Chef - Rotisería familiar desde 2012. Pizzas, empanadas, milanesas, pastas caseras y más. Buenos Aires." />
+  <title>Mi Chef | Rotisería Familiar</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== LOADER ===================== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <p>Mi Chef</p>
+    </div>
+  </div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="header">
+    <div class="header-top-bar">
+      <span><i class="fa-regular fa-clock"></i> Lun a Sáb &nbsp;|&nbsp; 19:00 – 23:00</span>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="nav-logo" aria-label="Mi Chef - Inicio">
+        <svg class="logo-icon" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="30" cy="38" rx="22" ry="7" fill="var(--gold)"/>
+          <rect x="11" y="31" width="38" height="10" rx="4" fill="var(--gold)"/>
+          <circle cx="30" cy="20" r="14" fill="var(--cream)"/>
+          <circle cx="16" cy="25" r="9" fill="var(--cream)"/>
+          <circle cx="44" cy="25" r="9" fill="var(--cream)"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">Mi Chef</span>
+          <span class="logo-sub">Rotisería Familiar</span>
+        </div>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+
+        <li class="has-dropdown">
+          <a href="platos.html" class="nav-link dropdown-toggle">
+            Platos <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </a>
+          <ul class="dropdown" role="menu">
+            <li role="menuitem"><a href="platos.html#pizzas" class="dropdown-link">Pizzas</a></li>
+            <li role="menuitem"><a href="platos.html#empanadas" class="dropdown-link">Empanadas</a></li>
+            <li role="menuitem"><a href="platos.html#milanesas" class="dropdown-link">Milanesas</a></li>
+            <li role="menuitem"><a href="platos.html#pastas" class="dropdown-link">Pastas</a></li>
+            <li role="menuitem"><a href="platos.html#carnes" class="dropdown-link">Carnes</a></li>
+            <li role="menuitem"><a href="platos.html#pollos" class="dropdown-link">Pollos</a></li>
+            <li role="menuitem"><a href="platos.html#ensaladas" class="dropdown-link">Ensaladas</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a href="extra.html" class="nav-link dropdown-toggle">
+            Extra <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </a>
+          <ul class="dropdown" role="menu">
+            <li role="menuitem"><a href="extra.html#bebidas" class="dropdown-link"><i class="fa-solid fa-bottle-water"></i> Bebidas</a></li>
+            <li role="menuitem"><a href="extra.html#salsas"  class="dropdown-link"><i class="fa-solid fa-bowl-food"></i> Salsas</a></li>
+            <li role="menuitem"><a href="extra.html#postres" class="dropdown-link"><i class="fa-solid fa-cake-candles"></i> Postres</a></li>
+          </ul>
+        </li>
+
+        <li><a href="galeria.html"  class="nav-link">Galería</a></li>
+        <li><a href="contacto.html" class="nav-link nav-cta">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="inicio" class="hero">
+      <div class="hero-bg">
+        <img
+          src="img/banner_compressed.webp"
+          alt="Mesa con comida casera abundante"
+          class="hero-img"
+          loading="eager"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <span class="hero-badge">✦ Desde 2012 ✦</span>
+        <h1 class="hero-title">
+          El sabor de casa,<br />
+          <em>hecho por expertos</em>
+        </h1>
+        <p class="hero-sub">Comida casera de calidad, elaborada con ingredientes frescos y el amor de siempre.</p>
+        <div class="hero-actions">
+          <a href="platos.html"         class="btn btn-primary">Ver Menú</a>
+          <a href="contacto.html"   class="btn btn-outline">Hacer Pedido</a>
+        </div>
+      </div>
+
+      <div class="scroll-cue">
+        <span>Scrollear</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- ===================== NOSOTROS ===================== -->
+    <section id="nosotros" class="about section-pad">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-text reveal">
+            <span class="section-label">Nuestra Historia</span>
+            <h2 class="section-title">Una familia,<br/><em>una pasión</em></h2>
+            <p>
+              Nacimos en 2012 como un emprendimiento familiar en el oeste de Buenos Aires.
+              Lo que comenzó como un sueño de cocinar para el barrio, hoy es una tradición que
+              une a cientos de familias cada noche alrededor de la mesa.
+            </p>
+            <p>
+              Cada plato que preparamos lleva el mismo cuidado y dedicación de siempre:
+              ingredientes frescos del día, recetas caseras y el calor de generaciones.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar">
+                <span class="pillar-icon">🏡</span>
+                <div>
+                  <strong>Empresa familiar</strong>
+                  <span>Tres generaciones en la cocina</span>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon">📅</span>
+                <div>
+                  <strong>Desde 2012</strong>
+                  <span>Más de 13 años de experiencia</span>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon">🥬</span>
+                <div>
+                  <strong>Ingredientes frescos</strong>
+                  <span>Comprados diariamente</span>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon">❤️</span>
+                <div>
+                  <strong>Calidad casera</strong>
+                  <span>Recetas de la abuela, siempre</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-gallery reveal">
+            <div class="gallery-main">
+              <img src="img/photo-1414235077428-338989a2e8c0.webp" alt="Cocina del local" loading="lazy" />
+            </div>
+            <div class="gallery-sub">
+              <img src="img/photo-1504674900247-0877df9cc836.webp" alt="Plato típico" loading="lazy" />
+              <img src="img/photo-1540189549336-e6e99c3679fe.webp" alt="Ingredientes frescos" loading="lazy" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS BANNER ===================== -->
+    <div class="stats-banner">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <span class="stat-num" data-target="13">0</span><span class="stat-suf">+</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-num" data-target="5000">0</span><span class="stat-suf">+</span>
+            <span class="stat-label">Familias satisfechas</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-num" data-target="10">0</span><span class="stat-suf"></span>
+            <span class="stat-label">Categorías de platos</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-num" data-target="100">0</span><span class="stat-suf">%</span>
+            <span class="stat-label">Ingredientes frescos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== BANNER CTA ===================== -->
+    <div class="cta-banner">
+      <div class="cta-bg">
+        <img src="img/banner-extra_compressed.webp" alt="" aria-hidden="true" />
+        <div class="cta-overlay"></div>
+      </div>
+      <div class="container cta-content reveal">
+        <h2>"La mejor cocina es la que<br/><em>huele a hogar"</em></h2>
+        <p>Pedí por WhatsApp y retirá en el local sin esperar.</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+          <a href="https://wa.me/5491145237890?text=Hola!%20Quiero%20hacer%20un%20pedido." class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+          </a>
+          <a href="contacto.html" class="btn btn-outline">Ver datos de contacto</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Mi Chef - Inicio">
+            <svg class="logo-icon" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <ellipse cx="30" cy="38" rx="22" ry="7" fill="var(--gold)"/>
+              <rect x="11" y="31" width="38" height="10" rx="4" fill="var(--gold)"/>
+              <circle cx="30" cy="20" r="14" fill="var(--cream)"/>
+              <circle cx="16" cy="25" r="9" fill="var(--cream)"/>
+              <circle cx="44" cy="25" r="9" fill="var(--cream)"/>
+            </svg>
+            <div class="logo-text">
+              <span class="logo-name" style="color:var(--cream)">Mi Chef</span>
+              <span class="logo-sub" style="color:var(--gold)">Rotisería Familiar</span>
+            </div>
+          </a>
+          <p>Comida casera de calidad desde 2012. Porque el mejor sabor es el que se siente en casa.</p>
+          <div class="social-links">
+            <a href="https://wa.me/5491145237890" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://instagram.com/michefrotiseria" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com/michefrotiseria" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Menú</h4>
+          <ul>
+            <li><a href="#pizzas">Pizzas</a></li>
+            <li><a href="#empanadas">Empanadas</a></li>
+            <li><a href="#milanesas">Milanesas</a></li>
+            <li><a href="#pastas">Pastas Caseras</a></li>
+            <li><a href="#carnes">Carnes</a></li>
+            <li><a href="#pollos">Pollos</a></li>
+            <li><a href="#ensaladas">Ensaladas</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+            <li><a href="#salsas">Salsas</a></li>
+            <li><a href="#postres">Postres</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contacto y Horarios</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Av. Rivadavia 24822, Merlo, Buenos Aires</p>
+          <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5491145237890">+54 11 4523-7890</a></p>
+          <p><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/michefrotiseria">@michefrotiseria</a></p>
+          <p><i class="fa-brands fa-facebook-f"></i> <a href="https://facebook.com/michefrotiseria">Mi Chef Rotisería</a></p>
+          <div class="footer-hours">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+              <span>Lunes a Sábados</span>
+              <strong>19:00 – 23:00 hs</strong>
+              <span style="color:var(--gold-light);font-size:.8rem;">Domingos cerrado</span>
+            </div>
+          </div>
+          <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="galeria.html"  class="footer-page-link"><i class="fa-solid fa-images"></i> Galería</a>
+            <a href="contacto.html" class="footer-page-link"><i class="fa-solid fa-envelope"></i> Contacto</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Mi Chef Rotisería. Todos los derechos reservados.</p>
+        <p>Diseñado con <span style="color:var(--terracota)">♥</span> en Buenos Aires</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Flotante -->
+  <a href="https://wa.me/5491145237890?text=Hola!%20Quiero%20hacer%20un%20pedido." class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Volver arriba -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

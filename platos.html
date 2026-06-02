@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mi Chef - Nuestro Menú de Platos. Pizzas, empanadas, milanesas, pastas caseras y más." />
+  <title>Platos | Mi Chef</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header id="header">
+    <div class="header-top-bar">
+      <span><i class="fa-regular fa-clock"></i> Lun a Sáb &nbsp;|&nbsp; 19:00 – 23:00</span>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="nav-logo" aria-label="Mi Chef - Inicio">
+        <svg class="logo-icon" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="30" cy="38" rx="22" ry="7" fill="var(--gold)"/>
+          <rect x="11" y="31" width="38" height="10" rx="4" fill="var(--gold)"/>
+          <circle cx="30" cy="20" r="14" fill="var(--cream)"/>
+          <circle cx="16" cy="25" r="9" fill="var(--cream)"/>
+          <circle cx="44" cy="25" r="9" fill="var(--cream)"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">Mi Chef</span>
+          <span class="logo-sub">Rotisería Familiar</span>
+        </div>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        
+        <li class="has-dropdown">
+          <a href="platos.html" class="nav-link dropdown-toggle active">
+            Platos <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </a>
+          <ul class="dropdown" role="menu">
+            <li role="menuitem"><a href="platos.html#pizzas" class="dropdown-link">Pizzas</a></li>
+            <li role="menuitem"><a href="platos.html#empanadas" class="dropdown-link">Empanadas</a></li>
+            <li role="menuitem"><a href="platos.html#milanesas" class="dropdown-link">Milanesas</a></li>
+            <li role="menuitem"><a href="platos.html#pastas" class="dropdown-link">Pastas</a></li>
+            <li role="menuitem"><a href="platos.html#carnes" class="dropdown-link">Carnes</a></li>
+            <li role="menuitem"><a href="platos.html#pollos" class="dropdown-link">Pollos</a></li>
+            <li role="menuitem"><a href="platos.html#ensaladas" class="dropdown-link">Ensaladas</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a href="extra.html" class="nav-link dropdown-toggle">
+            Extra <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </a>
+          <ul class="dropdown" role="menu">
+            <li role="menuitem"><a href="extra.html#bebidas" class="dropdown-link"><i class="fa-solid fa-bottle-water"></i> Bebidas</a></li>
+            <li role="menuitem"><a href="extra.html#salsas"  class="dropdown-link"><i class="fa-solid fa-bowl-food"></i> Salsas</a></li>
+            <li role="menuitem"><a href="extra.html#postres" class="dropdown-link"><i class="fa-solid fa-cake-candles"></i> Postres</a></li>
+          </ul>
+        </li>
+
+        <li><a href="galeria.html"  class="nav-link">Galería</a></li>
+        <li><a href="contacto.html" class="nav-link nav-cta">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="img/banner2_compressed.webp" alt="Nuestros Platos"/>
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="container page-hero-content">
+      <nav class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Platos</span>
+      </nav>
+      <h1 class="page-hero-title">Nuestras Especialidades</h1>
+      <p>Comida casera abundante, hecha con el amor y la frescura de siempre.</p>
+    </div>
+  </section>
+
+  <main>
+    <section id="pizzas" class="menu-section section-pad">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Nuestras especialidades</span>
+          <h2 class="section-title">Pizzas</h2>
+          <p class="section-desc">Masa artesanal con leudado lento, ingredientes seleccionados y horneadas en horno de barro.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/muzzarella.webp" alt="Pizza Muzzarella" loading="lazy" />
+              <span class="card-badge">Clásica</span>
+            </div>
+            <div class="card-body">
+              <h3>Muzzarella</h3>
+              <p>Salsa de tomate casera, generosa cantidad de muzzarella y aceite de oliva. El clásico que nunca falla.</p>
+              <div class="card-footer">
+                <span class="price">$11.000</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Pizza Muzzarella')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/pizza-napo (1).webp" alt="Pizza Napolitana" loading="lazy" />
+              <span class="card-badge">Popular</span>
+            </div>
+            <div class="card-body">
+              <h3>Napolitana</h3>
+              <p>Muzzarella derretida, tomates frescos en rodajas, ajo, albahaca y un toque de aceite de oliva extra virgen.</p>
+              <div class="card-footer">
+                <span class="price">$16.000</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Pizza Napolitana')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/fuga.webp" alt="Pizza Fugazzeta" loading="lazy" />
+              <span class="card-badge">Especial</span>
+            </div>
+            <div class="card-body">
+              <h3>Fugazzeta</h3>
+              <p>La reina de las pizzas argentinas. Cebolla caramelizada, muzzarella abundante y orégano fresco. Sin igual.</p>
+              <div class="card-footer">
+                <span class="price">$14.000</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Pizza Fugazzeta')">Pedir</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="empanadas" class="menu-section section-pad bg-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Recetas de la abuela</span>
+          <h2 class="section-title">Empanadas</h2>
+          <p class="section-desc">Masa casera, rellenos generosos y horneadas al punto justo. La docena perfecta.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/jyq2_compressed.webp" alt="Empanadas de Carne" loading="lazy" />
+              <span class="card-badge">Tradicional</span>
+            </div>
+            <div class="card-body">
+              <h3>Empanada de Carne</h3>
+              <p>Picadillo de carne vacuna, huevo duro, aceitunas y especias. Jugosas y generosas, como en casa.</p>
+              <div class="card-footer">
+                <span class="price">$2.000 c/u</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Empanada de Carne')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/emp_carne2_compressed.webp" alt="Empanada Jamón y Queso" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>Jamón y Queso</h3>
+              <p>Jamón cocido de calidad y queso mantecoso derretido, envueltos en una masa crujiente y dorada.</p>
+              <div class="card-footer">
+                <span class="price">$2.000 c/u</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Empanada de Jamón y Queso')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/Empanadas-pollo.webp" alt="Empanada de Pollo" loading="lazy" />
+              <span class="card-badge">Light</span>
+            </div>
+            <div class="card-body">
+              <h3>Pollo</h3>
+              <p>Pollo deshilachado con especias, pimientos y cebolla. Liviana, sabrosa y perfecta para cualquier ocasión.</p>
+              <div class="card-footer">
+                <span class="price">$2.000 c/u</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Empanada de Pollo')">Pedir</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="milanesas" class="menu-section section-pad">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Ícono argentino</span>
+          <h2 class="section-title">Milanesas</h2>
+          <p class="section-desc">Carne tierna, rebozado crocante y el tamaño justo. Acompañadas con puré, papas o ensalada.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/mila_napolitana.webp" alt="Milanesa Napolitana" loading="lazy" />
+              <span class="card-badge">Top ventas</span>
+            </div>
+            <div class="card-body">
+              <h3>Napolitana</h3>
+              <p>Milanesa clásica con salsa de tomate, jamón y muzzarella gratinada. El plato más pedido de la casa.</p>
+              <div class="card-footer">
+                <span class="price">$14.000</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Milanesa Napolitana')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/mila_caballo.webp" alt="Milanesa a Caballo" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>A Caballo</h3>
+              <p>Milanesa jugosa coronada con dos huevos fritos. Proteína y sabor en cada bocado. Un clásico irresistible.</p>
+              <div class="card-footer">
+                <span class="price">$16.000</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Milanesa a Caballo')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/mila_completa_compressed.webp" alt="Milanesa Completa" loading="lazy" />
+              <span class="card-badge">Combo</span>
+            </div>
+            <div class="card-body">
+              <h3>Completa</h3>
+              <p>Milanesa con guarnición a elección (puré, papas fritas o ensalada mixta) y bebida incluida.</p>
+              <div class="card-footer">
+                <span class="price">$20.000</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Milanesa Completa')">Pedir</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pastas" class="menu-section section-pad bg-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Amasadas a mano</span>
+          <h2 class="section-title">Pastas Caseras</h2>
+          <p class="section-desc">Elaboradas con sémola y huevo fresco cada día. Tiernas, saporosas y de verdad caseras.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/ravioles_compressed.webp" alt="Ravioles" loading="lazy" />
+              <span class="card-badge">Caseros</span>
+            </div>
+            <div class="card-body">
+              <h3>Ravioles</h3>
+              <p>Rellenos de ricotta y espinaca, bañados en salsa bolognesa casera o tuco de tomates frescos.</p>
+              <div class="card-footer">
+                <span class="price">$13.500</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Ravioles')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/ñoquis_compressed.webp" alt="Ñoquis" loading="lazy" />
+              <span class="card-badge">Domingo</span>
+            </div>
+            <div class="card-body">
+              <h3>Ñoquis</h3>
+              <p>Suaves y esponjosos, con papa fresca del día. Salsa a elección: fileto, estofado o crema con champignones.</p>
+              <div class="card-footer">
+                <span class="price">$12.000</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Ñoquis')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/tallarines.webp" alt="Tallarines" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>Tallarines</h3>
+              <p>Al huevo, cortados a mano. Perfectos con pesto de albahaca, bolognesa o simplemente con aceite y ajo.</p>
+              <div class="card-footer">
+                <span class="price">$12.000</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Tallarines')">Pedir</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="carnes" class="menu-section section-pad">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Del horno a tu mesa</span>
+          <h2 class="section-title">Carnes</h2>
+          <p class="section-desc">Cocción lenta y marinados tradicionales para carnes jugosas con todo el sabor argentino.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/asado.webp" alt="Asado al horno" loading="lazy" />
+              <span class="card-badge">Estrella</span>
+            </div>
+            <div class="card-body">
+              <h3>Asado al Horno</h3>
+              <p>Costillar de cerdo marinado y cocinado lentamente en horno de barro. Tierno, jugoso, sin igual.</p>
+              <div class="card-footer">
+                <span class="price">$16.500</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Asado al Horno')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/vacio.webp" alt="Vacio" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>Vacio</h3>
+              <p>Vacio con vino, tradicional de la casa.</p>
+              <div class="card-footer">
+                <span class="price">$15.000</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Bondiola')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/matambre-pizza-remake_compressed.webp" alt="Matambre a la pizza" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>Matambre a pizza</h3>
+              <p>Matambre a la pizza con tomates y aceitunas. Servido en porciones generosas.</p>
+              <div class="card-footer">
+                <span class="price">$20.200</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Matambre')">Pedir</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pollos" class="menu-section section-pad bg-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Dorados y jugosos</span>
+          <h2 class="section-title">Pollos</h2>
+          <p class="section-desc">Condimentados con hierbas frescas y cocidos a la perfección. La opción favorita de la familia.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/spiedo.webp" alt="Pollo al spiedo" loading="lazy" />
+              <span class="card-badge">N°1</span>
+            </div>
+            <div class="card-body">
+              <h3>Pollo al Spiedo</h3>
+              <p>Pollo entero girado lentamente sobre el spiedo. Piel dorada y crujiente, carne tierna y jugosa por dentro.</p>
+              <div class="card-footer">
+                <span class="price">$15.900</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Pollo al Spiedo')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/pollo y papas_compressed.webp" alt="Pollo con papas" loading="lazy" />
+              <span class="card-badge">Combo</span>
+            </div>
+            <div class="card-body">
+              <h3>Pollo con Papas</h3>
+              <p>Medio pollo asado con papas al horno con romero y ajo. Una combinación clásica e irresistible.</p>
+              <div class="card-footer">
+                <span class="price">$18.500</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Pollo con Papas')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/provenzal.webp" alt="Pollo a la provenzal" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>Pollo a la provenzal</h3>
+              <p>Suprema de pollo horneada y cubierta de salsa provenzal.</p>
+              <div class="card-footer">
+                <span class="price">$16.800</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Suprema Grillada')">Pedir</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ensaladas" class="menu-section section-pad">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Frescas y naturales</span>
+          <h2 class="section-title">Ensaladas</h2>
+          <p class="section-desc">Verduras frescas seleccionadas diariamente. El complemento perfecto o una opción liviana completa.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/cesar.webp" alt="Ensalada César" loading="lazy" />
+              <span class="card-badge">Clásica</span>
+            </div>
+            <div class="card-body">
+              <h3>César</h3>
+              <p>Lechuga romana, crutones artesanales, parmesano rallado y aderezo césar casero. Fresca y sabrosa.</p>
+              <div class="card-footer">
+                <span class="price">$13.000</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Ensalada César')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/mixta.webp" alt="Ensalada Mixta" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>Mixta</h3>
+              <p>Lechuga, tomate, zanahoria, pepino y rabanito. Acompañada de aderezo a elección. Simple y nutritiva.</p>
+              <div class="card-footer">
+                <span class="price">$13.500</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Ensalada Mixta')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/ensalda rusa.webp" alt="Ensalada Completa con Pollo" loading="lazy" />
+              <span class="card-badge">Recomendada</span>
+            </div>
+            <div class="card-body">
+              <h3>Ensalada Rusa</h3>
+              <p>Ensalada preparada principalmente con papas, zanahorias, arvejas y mayonesa.</p>
+              <div class="card-footer">
+                <span class="price">$14.000</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Ensalada Completa con Pollo')">Pedir</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Mi Chef - Inicio">
+            <svg class="logo-icon" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <ellipse cx="30" cy="38" rx="22" ry="7" fill="var(--gold)"/>
+              <rect x="11" y="31" width="38" height="10" rx="4" fill="var(--gold)"/>
+              <circle cx="30" cy="20" r="14" fill="var(--cream)"/>
+              <circle cx="16" cy="25" r="9" fill="var(--cream)"/>
+              <circle cx="44" cy="25" r="9" fill="var(--cream)"/>
+            </svg>
+            <div class="logo-text">
+              <span class="logo-name" style="color:var(--cream)">Mi Chef</span>
+              <span class="logo-sub" style="color:var(--gold)">Rotisería Familiar</span>
+            </div>
+          </a>
+          <p>Comida casera de calidad desde 2012. Porque el mejor sabor es el que se siente en casa.</p>
+          <div class="social-links">
+            <a href="https://wa.me/5491145237890" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://instagram.com/michefrotiseria" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com/michefrotiseria" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Menú</h4>
+          <ul>
+            <li><a href="platos.html#pizzas">Pizzas</a></li>
+            <li><a href="platos.html#empanadas">Empanadas</a></li>
+            <li><a href="platos.html#milanesas">Milanesas</a></li>
+            <li><a href="platos.html#pastas">Pastas Caseras</a></li>
+            <li><a href="platos.html#carnes">Carnes</a></li>
+            <li><a href="platos.html#pollos">Pollos</a></li>
+            <li><a href="platos.html#ensaladas">Ensaladas</a></li>
+            <li><a href="extra.html#bebidas">Bebidas</a></li>
+            <li><a href="extra.html#salsas">Salsas</a></li>
+            <li><a href="extra.html#postres">Postres</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contacto y Horarios</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Av. Rivadavia 24822, Merlo, Buenos Aires</p>
+          <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5491145237890">+54 11 4523-7890</a></p>
+          <p><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/michefrotiseria">@michefrotiseria</a></p>
+          <div class="footer-hours">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+              <span>Lunes a Sábados</span>
+              <strong>19:00 – 23:00 hs</strong>
+              <span style="color:var(--gold-light);font-size:.8rem;">Domingos cerrado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Mi Chef Rotisería. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5491145237890?text=Hola!%20Quiero%20hacer%20un%20pedido." class="wa-float" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+  <button class="back-to-top" id="backToTop"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mi Chef - Contactanos por WhatsApp, visitanos en Av. Rivadavia 4521, Merlo. Horarios: Lun–Sáb 19–23 hs." />
+  <title>Contacto | Mi Chef Rotisería</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-contacto">
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="header">
+    <div class="header-top-bar">
+      <span><i class="fa-regular fa-clock"></i> Lun a Sáb &nbsp;|&nbsp; 19:00 – 23:00</span>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="nav-logo" aria-label="Mi Chef - Inicio">
+        <svg class="logo-icon" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="30" cy="38" rx="22" ry="7" fill="var(--gold)"/>
+          <rect x="11" y="31" width="38" height="10" rx="4" fill="var(--gold)"/>
+          <circle cx="30" cy="20" r="14" fill="var(--cream)"/>
+          <circle cx="16" cy="25" r="9" fill="var(--cream)"/>
+          <circle cx="44" cy="25" r="9" fill="var(--cream)"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">Mi Chef</span>
+          <span class="logo-sub">Rotisería Familiar</span>
+        </div>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+
+        <!-- Desplegable Platos -->
+        <li class="has-dropdown">
+          <a href="platos.html" class="nav-link dropdown-toggle">
+            Platos <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </a>
+          <ul class="dropdown" role="menu">
+            <li role="menuitem"><a href="platos.html#pizzas" class="dropdown-link">Pizzas</a></li>
+            <li role="menuitem"><a href="platos.html#empanadas" class="dropdown-link">Empanadas</a></li>
+            <li role="menuitem"><a href="platos.html#milanesas" class="dropdown-link">Milanesas</a></li>
+            <li role="menuitem"><a href="platos.html#pastas" class="dropdown-link">Pastas</a></li>
+            <li role="menuitem"><a href="platos.html#carnes" class="dropdown-link">Carnes</a></li>
+            <li role="menuitem"><a href="platos.html#pollos" class="dropdown-link">Pollos</a></li>
+            <li role="menuitem"><a href="platos.html#ensaladas" class="dropdown-link">Ensaladas</a></li>
+          </ul>
+        </li>
+
+        <!-- Desplegable Extra -->
+        <li class="has-dropdown">
+          <a href="extra.html" class="nav-link dropdown-toggle">
+            Extra <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </a>
+          <ul class="dropdown" role="menu">
+            <li role="menuitem"><a href="extra.html#bebidas" class="dropdown-link"><i class="fa-solid fa-bottle-water"></i> Bebidas</a></li>
+            <li role="menuitem"><a href="extra.html#salsas"  class="dropdown-link"><i class="fa-solid fa-bowl-food"></i> Salsas</a></li>
+            <li role="menuitem"><a href="extra.html#postres" class="dropdown-link"><i class="fa-solid fa-cake-candles"></i> Postres</a></li>
+          </ul>
+        </li>
+
+        <li><a href="galeria.html"   class="nav-link">Galería</a></li>
+        <li><a href="contacto.html"  class="nav-link nav-cta active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <div class="page-hero">
+      <div class="page-hero-bg">
+        <img src="img/banner-contacto.webp" alt="" aria-hidden="true" />
+        <div class="page-hero-overlay"></div>
+      </div>
+      <div class="container page-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Inicio</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>Contacto</span>
+        </nav>
+        <span class="section-label" style="color:var(--gold)">Estamos cerca</span>
+        <h1 class="page-hero-title">Contacto</h1>
+        <p>Hacé tu pedido, consultanos por eventos o simplemente escribinos.</p>
+      </div>
+    </div>
+
+    <!-- ===================== CONTACTO PRINCIPAL ===================== -->
+    <section class="contact section-pad">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Info -->
+          <div class="contact-info reveal">
+
+            <div class="contact-info-title">
+              <h2 class="section-title" style="font-size:1.8rem">Encontranos</h2>
+              <p style="color:var(--text-light);margin-top:8px;">Estamos disponibles de lunes a sábado por la noche. También podés seguirnos en redes.</p>
+            </div>
+
+            <div class="info-block">
+              <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div>
+                <strong>Dirección</strong>
+                <span>Av. Rivadavia 4521, Merlo<br/>Buenos Aires, Argentina</span>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <span class="info-icon"><i class="fa-regular fa-clock"></i></span>
+              <div>
+                <strong>Horarios de Atención</strong>
+                <span>Lunes a Sábados: 19:00 – 23:00 hs<br/>Domingos: Cerrado</span>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <span class="info-icon"><i class="fa-brands fa-whatsapp"></i></span>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/5491145237890" target="_blank" rel="noopener">+54 11 4523-7890</a>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <span class="info-icon"><i class="fa-brands fa-instagram"></i></span>
+              <div>
+                <strong>Instagram</strong>
+                <a href="https://instagram.com/michefrotiseria" target="_blank" rel="noopener">@michefrotiseria</a>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <span class="info-icon"><i class="fa-brands fa-facebook-f"></i></span>
+              <div>
+                <strong>Facebook</strong>
+                <a href="https://facebook.com/michefrotiseria" target="_blank" rel="noopener">Mi Chef Rotisería</a>
+              </div>
+            </div>
+
+            <!-- CTA directo WhatsApp -->
+            <a href="https://wa.me/5491145237890?text=Hola!%20Quiero%20hacer%20un%20pedido." class="btn btn-wa-large" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Pedir directo por WhatsApp
+            </a>
+
+          </div>
+
+          <!-- Formulario -->
+          <div class="contact-form-wrap reveal">
+            <div class="form-header">
+              <h2 class="section-title" style="font-size:1.8rem">Envianos un mensaje</h2>
+              <p style="color:var(--text-light);margin-top:8px;">Completá el formulario y te contactamos vía WhatsApp.</p>
+            </div>
+            <form class="contact-form" id="contactForm" novalidate>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre">Nombre completo *</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Teléfono *</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="11 2345-6789" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <select id="asunto" name="asunto">
+                  <option value="pedido">Hacer un pedido</option>
+                  <option value="consulta">Consulta general</option>
+                  <option value="evento">Eventos / catering</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">Mensaje / Pedido *</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos qué querés pedir o en qué podemos ayudarte..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <i class="fa-brands fa-whatsapp"></i> Enviar por WhatsApp
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MAPA ===================== -->
+    <div class="map-section">
+      <div class="map-overlay-text reveal">
+        <div class="container">
+          <p><i class="fa-solid fa-location-dot"></i> Av. Rivadavia 24822, Merlo, Buenos Aires</p>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.516202171006!2d-58.71788982350101!3d-34.66691916083998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbff33e912527%3A0x335964afcebcb612!2sAv.%20Rivadavia%2024822%2C%20B1722%20Merlo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1780344245920!5m2!1ses-419!2sar"
+        width="100%"
+        height="420"
+        style="border:0;display:block;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación de Mi Chef Rotisería en Merlo, Buenos Aires"
+        aria-label="Mapa de ubicación"
+      ></iframe>
+    </div>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Mi Chef - Inicio">
+            <svg class="logo-icon" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <ellipse cx="30" cy="38" rx="22" ry="7" fill="var(--gold)"/>
+              <rect x="11" y="31" width="38" height="10" rx="4" fill="var(--gold)"/>
+              <circle cx="30" cy="20" r="14" fill="var(--cream)"/>
+              <circle cx="16" cy="25" r="9" fill="var(--cream)"/>
+              <circle cx="44" cy="25" r="9" fill="var(--cream)"/>
+            </svg>
+            <div class="logo-text">
+              <span class="logo-name" style="color:var(--cream)">Mi Chef</span>
+              <span class="logo-sub" style="color:var(--gold)">Rotisería Familiar</span>
+            </div>
+          </a>
+          <p>Comida casera de calidad desde 2012. Porque el mejor sabor es el que se siente en casa.</p>
+          <div class="social-links">
+            <a href="https://wa.me/5491145237890" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://instagram.com/michefrotiseria" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com/michefrotiseria" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Menú</h4>
+          <ul>
+            <li><a href="platos.html#pizzas">Pizzas</a></li>
+            <li><a href="platos.html#empanadas">Empanadas</a></li>
+            <li><a href="platos.html#milanesas">Milanesas</a></li>
+            <li><a href="platos.html#pastas">Pastas Caseras</a></li>
+            <li><a href="platos.html#carnes">Carnes</a></li>
+            <li><a href="platos.html#pollos">Pollos</a></li>
+            <li><a href="platos.html#ensaladas">Ensaladas</a></li>
+            <li><a href="extra.html#bebidas">Bebidas</a></li>
+            <li><a href="extra.html#salsas">Salsas</a></li>
+            <li><a href="extra.html#postres">Postres</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contacto y Horarios</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Av. Rivadavia 24822, Merlo, Buenos Aires</p>
+          <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5491145237890">+54 11 4523-7890</a></p>
+          <p><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/michefrotiseria">@michefrotiseria</a></p>
+          <p><i class="fa-brands fa-facebook-f"></i> <a href="https://facebook.com/michefrotiseria">Mi Chef Rotisería</a></p>
+          <div class="footer-hours">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+              <span>Lunes a Sábados</span>
+              <strong>19:00 – 23:00 hs</strong>
+              <span style="color:var(--gold-light);font-size:.8rem;">Domingos cerrado</span>
+            </div>
+          </div>
+          <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="galeria.html"  class="footer-page-link"><i class="fa-solid fa-images"></i> Galería</a>
+            <a href="contacto.html" class="footer-page-link"><i class="fa-solid fa-envelope"></i> Contacto</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Mi Chef Rotisería. Todos los derechos reservados.</p>
+        <p>Diseñado con <span style="color:var(--terracota)">♥</span> en Buenos Aires</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5491145237890?text=Hola!%20Quiero%20hacer%20un%20pedido." class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

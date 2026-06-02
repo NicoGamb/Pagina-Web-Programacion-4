@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mi Chef - Complementos, bebidas fresas, salsas caseras y postres artesanales." />
+  <title>Extras | Mi Chef</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header id="header">
+    <div class="header-top-bar">
+      <span><i class="fa-regular fa-clock"></i> Lun a Sáb &nbsp;|&nbsp; 19:00 – 23:00</span>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="nav-logo" aria-label="Mi Chef - Inicio">
+        <svg class="logo-icon" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="30" cy="38" rx="22" ry="7" fill="var(--gold)"/>
+          <rect x="11" y="31" width="38" height="10" rx="4" fill="var(--gold)"/>
+          <circle cx="30" cy="20" r="14" fill="var(--cream)"/>
+          <circle cx="16" cy="25" r="9" fill="var(--cream)"/>
+          <circle cx="44" cy="25" r="9" fill="var(--cream)"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">Mi Chef</span>
+          <span class="logo-sub">Rotisería Familiar</span>
+        </div>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        
+        <li class="has-dropdown">
+          <a href="platos.html" class="nav-link dropdown-toggle">
+            Platos <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </a>
+          <ul class="dropdown" role="menu">
+            <li role="menuitem"><a href="platos.html#pizzas" class="dropdown-link">Pizzas</a></li>
+            <li role="menuitem"><a href="platos.html#empanadas" class="dropdown-link">Empanadas</a></li>
+            <li role="menuitem"><a href="platos.html#milanesas" class="dropdown-link">Milanesas</a></li>
+            <li role="menuitem"><a href="platos.html#pastas" class="dropdown-link">Pastas</a></li>
+            <li role="menuitem"><a href="platos.html#carnes" class="dropdown-link">Carnes</a></li>
+            <li role="menuitem"><a href="platos.html#pollos" class="dropdown-link">Pollos</a></li>
+            <li role="menuitem"><a href="platos.html#ensaladas" class="dropdown-link">Ensaladas</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a href="extra.html" class="nav-link dropdown-toggle active">
+            Extra <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </a>
+          <ul class="dropdown" role="menu">
+            <li role="menuitem"><a href="extra.html#bebidas" class="dropdown-link"><i class="fa-solid fa-bottle-water"></i> Bebidas</a></li>
+            <li role="menuitem"><a href="extra.html#salsas"  class="dropdown-link"><i class="fa-solid fa-bowl-food"></i> Salsas</a></li>
+            <li role="menuitem"><a href="extra.html#postres" class="dropdown-link"><i class="fa-solid fa-cake-candles"></i> Postres</a></li>
+          </ul>
+        </li>
+
+        <li><a href="galeria.html"  class="nav-link">Galería</a></li>
+        <li><a href="contacto.html" class="nav-link nav-cta">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="img/banner-extra_compressed.webp" alt="Extras y Postres" />
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="container page-hero-content">
+      <nav class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Extra</span>
+      </nav>
+      <h1 class="page-hero-title">Bebidas, Salsas y Postres</h1>
+      <p>Los complementos perfectos para coronar una excelente comida casera.</p>
+    </div>
+  </section>
+
+  <main>
+    <section id="bebidas" class="menu-section section-pad bg-alt extra-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Para acompañar</span>
+          <h2 class="section-title"><i class="fa-solid fa-bottle-water extra-icon"></i> Bebidas</h2>
+          <p class="section-desc">Refrescantes opciones para acompañar cada plato. Frías, naturales y siempre disponibles.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/gaseosa.webp" alt="Gaseosas" loading="lazy" />
+              <span class="card-badge">Variedad</span>
+            </div>
+            <div class="card-body">
+              <h3>Gaseosas</h3>
+              <p>Pepsi, Sprite, Fanta y Paso de los Toros. Presentación en lata de 354ml.</p>
+              <div class="card-footer">
+                <span class="price">$1800</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Gaseosas')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/agua.webp" alt="Agua mineral" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>Agua Mineral</h3>
+              <p>Agua mineral sin gas. Ideal para acompañar las comidas. En botella de 500 ml.</p>
+              <div class="card-footer">
+                <span class="price">$1.800</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Agua Mineral')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/jugo.webp" alt="Jugo natural" loading="lazy" />
+              <span class="card-badge">Natural</span>
+            </div>
+            <div class="card-body">
+              <h3>Jugo Natural</h3>
+              <p>Exprimido al momento: naranja, limón o pomelo. Sin conservantes, sin azúcar agregada. Vitaminas puras.</p>
+              <div class="card-footer">
+                <span class="price">$3.200</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Jugo Natural')">Pedir</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="salsas" class="menu-section section-pad extra-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">El toque final</span>
+          <h2 class="section-title"><i class="fa-solid fa-bowl-food extra-icon"></i> Salsas</h2>
+          <p class="section-desc">Elaboradas en casa con recetas propias. El complemento perfecto para cada plato.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/chimichurri_compressed.webp" alt="Chimichurri" loading="lazy" />
+              <span class="card-badge">Clásica</span>
+            </div>
+            <div class="card-body">
+              <h3>Chimichurri</h3>
+              <p>Perejil, ajo, orégano, vinagre y aceite de oliva. Nuestra receta secreta de la casa para acompañar las carnes.</p>
+              <div class="card-footer">
+                <span class="price">$1.500</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Chimichurri')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/salsa-criolla_compressed.webp" alt="Salsa criolla" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>Salsa Criolla</h3>
+              <p>Tomate, cebolla, pimiento y aliño especial. Fresca, liviana y perfecta para carnes y empanadas.</p>
+              <div class="card-footer">
+                <span class="price">$1.500</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Salsa Criolla')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/mayonesa_compressed.webp" alt="Mayonesa casera" loading="lazy" />
+              <span class="card-badge">Casera</span>
+            </div>
+            <div class="card-body">
+              <h3>Mayonesa Casera</h3>
+              <p>Preparada con huevo fresco, limón y aceite de girasol. Cremosa y suave, sin conservantes artificiales.</p>
+              <div class="card-footer">
+                <span class="price">$2.000</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Mayonesa Casera')">Pedir</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="postres" class="menu-section section-pad bg-alt extra-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Dulce final</span>
+          <h2 class="section-title"><i class="fa-solid fa-cake-candles extra-icon"></i> Postres</h2>
+          <p class="section-desc">El cierre perfecto para cada comida. Preparados con los mismos ingredientes de calidad de siempre.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/flan.webp" alt="Flan casero" loading="lazy" />
+              <span class="card-badge">Clásico</span>
+            </div>
+            <div class="card-body">
+              <h3>Flan Casero</h3>
+              <p>Flan cremoso con dulce de leche y crema batida. Receta tradicional de la casa, horneado en baño maría.</p>
+              <div class="card-footer">
+                <span class="price">$10.500</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Flan Casero')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/tiramisu_compressed.webp" alt="Tiramisú" loading="lazy" />
+              <span class="card-badge">Especial</span>
+            </div>
+            <div class="card-body">
+              <h3>Tiramisú</h3>
+              <p>Capas de bizcocho embebido en café, crema de mascarpone y cacao amargo. Una delicadeza italiana irresistible.</p>
+              <div class="card-footer">
+                <span class="price">$12.000</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Tiramisú')">Pedir</button>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img-wrap">
+              <img src="img/ensalada_frutas_compressed.webp" alt="Ensalada de frutas" loading="lazy" />
+              <span class="card-badge">Fresco</span>
+            </div>
+            <div class="card-body">
+              <h3>Ensalada de Frutas</h3>
+              <p>Frutas de estación frescas con jugo de naranja y menta. Liviana, colorida y perfecta para cerrar la cena.</p>
+              <div class="card-footer">
+                <span class="price">$11.000</span>
+                <button class="btn-pedido" onclick="openWhatsApp('Ensalada de Frutas')">Pedir</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Mi Chef - Inicio">
+            <svg class="logo-icon" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <ellipse cx="30" cy="38" rx="22" ry="7" fill="var(--gold)"/>
+              <rect x="11" y="31" width="38" height="10" rx="4" fill="var(--gold)"/>
+              <circle cx="30" cy="20" r="14" fill="var(--cream)"/>
+              <circle cx="16" cy="25" r="9" fill="var(--cream)"/>
+              <circle cx="44" cy="25" r="9" fill="var(--cream)"/>
+            </svg>
+            <div class="logo-text">
+              <span class="logo-name" style="color:var(--cream)">Mi Chef</span>
+              <span class="logo-sub" style="color:var(--gold)">Rotisería Familiar</span>
+            </div>
+          </a>
+          <p>Comida casera de calidad desde 2012. Porque el mejor sabor es el que se siente en casa.</p>
+          <div class="social-links">
+            <a href="https://wa.me/5491145237890" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://instagram.com/michefrotiseria" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Menú</h4>
+          <ul>
+            <li><a href="platos.html#pizzas">Pizzas</a></li>
+            <li><a href="platos.html#empanadas">Empanadas</a></li>
+            <li><a href="platos.html#milanesas">Milanesas</a></li>
+            <li><a href="platos.html#pastas">Pastas Caseras</a></li>
+            <li><a href="platos.html#carnes">Carnes</a></li>
+            <li><a href="platos.html#pollos">Pollos</a></li>
+            <li><a href="platos.html#ensaladas">Ensaladas</a></li>
+            <li><a href="extra.html#bebidas">Bebidas</a></li>
+            <li><a href="extra.html#salsas">Salsas</a></li>
+            <li><a href="extra.html#postres">Postres</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contacto y Horarios</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Av. Rivadavia 24822, Merlo, Buenos Aires</p>
+          <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5491145237890">+54 11 4523-7890</a></p>
+          <div class="footer-hours">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+              <span>Lunes a Sábados</span>
+              <strong>19:00 – 23:00 hs</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Mi Chef Rotisería. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5491145237890?text=Hola!%20Quiero%20hacer%20un%20pedido." class="wa-float" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+  <button class="back-to-top" id="backToTop"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
